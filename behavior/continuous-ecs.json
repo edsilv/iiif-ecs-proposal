@@ -9,8 +9,6 @@
             "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0",
             "type": "Canvas",
             "label": { "en": [ "Scroll Section 1" ] },
-            "width": 100,
-            "height": 100,
             "content": [
                 {
                     "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0/annotationpage/0",
@@ -38,6 +36,8 @@
                             "type": "Annotation",
                             "motivation": "layout",
                             "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
+                            "width": 100,
+                            "height": 100,
                             "continuous": true
                         }
                     ]
@@ -48,8 +48,6 @@
             "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1",
             "type": "Canvas",
             "label": "Scroll Section 2",
-            "width": 100,
-            "height": 100,
             "content": [
                 {
                     "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1/annotationpage/1",
@@ -77,6 +75,8 @@
                             "type": "Annotation",
                             "motivation": "layout",
                             "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
+                            "width": 100,
+                            "height": 100,
                             "continuous": true
                         }
                     ]
