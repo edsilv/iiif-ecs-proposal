@@ -1,0 +1,70 @@
+
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://edsilv.github.io/strawmen/behavior/transform.json",
+    "type": "Manifest",
+    "label": {  "en": [ "a canvas with 3d object and transform"  ] },
+    "items": [
+        {
+            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+            "type": "Canvas",
+            "label": { "en": [ "demo" ] },
+            "content": [
+                {
+                    "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotationpage/0",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "model/gltf+json",
+                                            "id": "https://edsilv.github.io/strawmen/media/object.gltf",
+                                            "type": "PhysicalObject"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/1",
+                            "type": "Annotation",
+                            "motivation": "transform",
+                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "position",
+                                            "x": 0.01,
+                                            "y": 0.01,
+                                            "z": 0.1
+                                        },
+                                        {
+                                            "type": "rotation",
+                                            "x": 0,
+                                            "y": 0,
+                                            "z": 1
+                                        },
+                                        {
+                                            "type": "scale",
+                                            "x": 1,
+                                            "y": 1,
+                                            "z": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}
