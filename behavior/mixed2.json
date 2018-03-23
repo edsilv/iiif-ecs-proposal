@@ -1,0 +1,56 @@
+
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json",
+    "type": "Manifest",
+    "label": {  "en": [ "a canvas with layout and playback behaviors"  ] },
+    "items": [
+        {
+            "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0",
+            "type": "Canvas",
+            "label": { "en": [ "demo" ] },
+            "content": [
+                {
+                    "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0/annotationpage/0",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "audio/mp4",
+                                            "id": "https://edsilv.github.io/strawmen/media/audio1.mp4",
+                                            "type": "Audio"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0/annotation/1",
+                            "type": "Annotation",
+                            "motivation": "layout",
+                            "target": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0",
+                            "width": 100,
+                            "height": 100
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0/annotation/2",
+                            "type": "Annotation",
+                            "motivation": "playback",
+                            "target": "https://edsilv.github.io/strawmen/behavior/mixed2.json/items/canvas/0",
+                            "duration": 3723.4,
+                            "loop": true
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}
