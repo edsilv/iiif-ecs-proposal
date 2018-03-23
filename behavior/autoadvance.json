@@ -1,0 +1,73 @@
+
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json",
+    "type": "Manifest",
+    "label": {  "en": [ "auto-advancing audio"  ] },
+    "behavior": "auto-advance",
+    "items": [
+        {
+            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/0",
+            "type": "Canvas",
+            "label": { "en": [ "Tape 1 Side 1" ] },
+            "duration": 3723.4,
+            "content": [
+                {
+                    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/0/annotationpage/0",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/0/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/0",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "audio/mp4",
+                                            "id": "https://edsilv.github.io/strawmen/media/audio1.mp4",
+                                            "type": "Audio"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/1",
+            "type": "Canvas",
+            "label": "Tape 1 Side 2",
+            "duration": 3723.4,
+            "content": [
+                {
+                    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/1/annotationpage/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/1/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance.json/items/canvas/1",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "audio/mp4",
+                                            "id": "https://edsilv.github.io/strawmen/media/audio2.mp4",
+                                            "type": "Audio"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}
