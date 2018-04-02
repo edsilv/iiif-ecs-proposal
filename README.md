@@ -26,10 +26,10 @@ Use custom annotation `motivation`s to classify components.
 
 ```json
 {
-    "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2/annotation/1",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/2/annotation/1",
     "type": "Annotation",
     "motivation": "scale",
-    "target": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/2",
     "body": {
         "x": 100,
         "y": 100,
@@ -51,10 +51,10 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
 
 ```json
 {
-    "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/2",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/transform.json/items/canvas/0/annotation/2",
     "type": "Annotation",
     "motivation": "position",
-    "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/transform.json/items/canvas/0",
     "body": {
         "x": 0,
         "y": 1,
@@ -70,10 +70,10 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
 
 ```json
 {
-    "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/3/annotation/2",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/3/annotation/2",
     "type": "Annotation",
     "motivation": "display",
-    "target": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/2",
     "body": {
         "viewingDirection": "top-to-bottom",
         "continuous": true
@@ -96,10 +96,10 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 
 ```json
 {
-    "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/0/annotation/1",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/0/annotation/1",
     "type": "Annotation",
     "motivation": "playback",
-    "target": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/mixed.json/items/canvas/0",
     "body": {
         "duration": 3723.4,
         "continuous": true
@@ -118,10 +118,10 @@ The `continuous` property in this context instructs the playback `system` to adv
 
 ```json
 {
-    "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/3",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/transform.json/items/canvas/0/annotation/3",
     "type": "Annotation",
     "motivation": "rotation",
-    "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/transform.json/items/canvas/0",
     "body": {
         "x": 45,
         "y": 90,
