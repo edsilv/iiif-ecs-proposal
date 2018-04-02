@@ -79,8 +79,9 @@
                             "motivation": "scale",
                             "target": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0",
                             "body": {
-                                "width": 9000,
-                                "height": 1000
+                                "x": 100,
+                                "y": 100,
+                                "z": 0
                             }
                         }
                     ]

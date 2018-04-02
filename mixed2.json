@@ -39,8 +39,9 @@
                             "motivation": "scale",
                             "target": "https://edsilv.github.io/iiif-ecs-proposal/mixed2.json/items/canvas/0",
                             "body": {
-                                "width": 100,
-                                "height": 100
+                                "x": 100,
+                                "y": 100,
+                                "z": 0
                             }
                         },
                         {
