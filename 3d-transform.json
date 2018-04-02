@@ -52,7 +52,7 @@
                             "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
                             "body": {
                                 "x": 0,
-                                "y": 1,
+                                "y": 0,
                                 "z": -1
                             }
                         },
