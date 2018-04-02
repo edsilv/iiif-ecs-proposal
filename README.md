@@ -38,7 +38,8 @@ Use custom annotation `motivation`s to classify components.
 }
 ```
 
-[StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precedent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
+[StringBody](https://www.w3.org/TR/annotation-model/#string-body) allows values to be included directly into annotations. 
+Could the ecs schema override `body` to permit complex json data values within annotations? The content of these complex objects would be defined per component type.
 
 A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
 
