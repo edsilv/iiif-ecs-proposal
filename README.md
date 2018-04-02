@@ -107,6 +107,10 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 }
 ```
 
+The playback component adds `duration` and other temporal properties to a `canvas`.
+
+The `continuous` property in this context instructs the playback `system` to advance to the next playable `entity` when this `entity`'s playable `duration` ends.
+
 </details>
 
 <details>
@@ -125,10 +129,6 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
     }
 }
 ```
-
-The playback component adds `duration` and other strictly temporal properties to a `canvas`.
-
-The `continuous` property in this context instructs the playback `system` to advance to the next playable `entity` when this `entity`'s playable `duration` ends.
 
 </details>
 
