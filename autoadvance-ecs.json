@@ -3,30 +3,30 @@
         "http://iiif.io/api/presentation/3/context.json",
         "http://customschema.com/ecs.json"
     ],
-    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json",
     "type": "Manifest",
     "label": {  "en": [ "auto-advancing audio"  ] },
     "items": [
         {
-            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
+            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0",
             "type": "Canvas",
             "label": { "en": [ "Tape 1 Side 1" ] },
             "content": [
                 {
-                    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0/annotationpage/0",
+                    "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0/annotationpage/0",
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0/annotation/0",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0/annotation/0",
                             "type": "Annotation",
                             "motivation": "painting",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0",
                             "body": [
                                 {
                                     "items": [
                                         {
                                             "format": "audio/mp4",
-                                            "id": "https://edsilv.github.io/strawmen/media/audio1.mp4",
+                                            "id": "https://edsilv.github.io/iiif-ecs-proposal/media/audio1.mp4",
                                             "type": "Audio"
                                         }
                                     ]
@@ -34,10 +34,10 @@
                             ]
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0/annotation/1",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0/annotation/1",
                             "type": "Annotation",
                             "motivation": "playback",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/0",
                             "body": {
                                 "duration": 3723.4,
                                 "continuous": true
@@ -48,25 +48,25 @@
             ]
         },
         {
-            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
+            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1",
             "type": "Canvas",
             "label": "Tape 1 Side 2",
             "content": [
                 {
-                    "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1/annotationpage/1",
+                    "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1/annotationpage/1",
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1/annotation/0",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1/annotation/0",
                             "type": "Annotation",
                             "motivation": "painting",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1",
                             "body": [
                                 {
                                     "items": [
                                         {
                                             "format": "audio/mp4",
-                                            "id": "https://edsilv.github.io/strawmen/media/audio2.mp4",
+                                            "id": "https://edsilv.github.io/iiif-ecs-proposal/media/audio2.mp4",
                                             "type": "Audio"
                                         }
                                     ]
@@ -74,10 +74,10 @@
                             ]
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1/annotation/1",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1/annotation/1",
                             "type": "Annotation",
                             "motivation": "playback",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/autoadvance-ecs.json/items/canvas/1",
                             "body": {
                                 "duration": 3723.4,
                                 "continuous": true

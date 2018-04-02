@@ -1,0 +1,91 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/3/context.json",
+        "http://customschema.com/ecs.json"
+    ],
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json",
+    "type": "Manifest",
+    "label": {  "en": [ "multiple image annotations"  ] },
+    "items": [
+        {
+            "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0",
+            "type": "Canvas",
+            "label": { "en": [ "Scroll" ] },
+            "content": [
+                {
+                    "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0/annotationpage/0",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0#xywh=0,0,3000,1000",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "image/jpg",
+                                            "id": "https://edsilv.github.io/strawmen/media/image1.jpg",
+                                            "type": "Image",
+                                            "width": 3000,
+                                            "height": 1000
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0/annotation/1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0#xywh=3000,0,3000,1000",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "image/jpg",
+                                            "id": "https://edsilv.github.io/strawmen/media/image1.jpg",
+                                            "type": "Image",
+                                            "width": 3000,
+                                            "height": 1000
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0/annotation/2",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0#xywh=6000,0,3000,1000",
+                            "body": [
+                                {
+                                    "items": [
+                                        {
+                                            "format": "image/jpg",
+                                            "id": "https://edsilv.github.io/strawmen/media/image3.jpg",
+                                            "type": "Image",
+                                            "width": 3000,
+                                            "height": 1000
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0/annotation/3",
+                            "type": "Annotation",
+                            "motivation": "scale",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/multiple-image-annotations.json/items/canvas/0",
+                            "body": {
+                                "width": 9000,
+                                "height": 1000
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

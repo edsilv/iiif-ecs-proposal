@@ -8,7 +8,7 @@ This is a proposal (WIP) for how to use the [IIIF Presentation API](http://prezi
 
 IIIF viewers contain the `System` logic.
 
-To extend your IIIF manifest to allow ECS behaviour, include a custom schema:
+To extend a IIIF manifest to allow ECS behaviour, include a custom schema:
 
 ```
 "@context": [
@@ -38,8 +38,6 @@ Use custom annotation `motivation`s to classify components.
 }
 ```
 
-`width` and `height` as direct properties of a canvas implies that a resource can always have spatial dimensions. Audio files for example do not. 3D files would also require an extra `depth` value. I propose a `scale` component to encode these values if appropriate for the resource.
-
 [StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precedent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
 
 A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
@@ -66,7 +64,6 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
 ```
 
 </details>
-
 
 <details>
 <summary>Display</summary>

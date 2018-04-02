@@ -4,30 +4,30 @@
         "http://iiif.io/api/presentation/3/context.json",
         "http://customschema.com/ecm.json"
     ],
-    "id": "https://edsilv.github.io/strawmen/behavior/transform.json",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json",
     "type": "Manifest",
     "label": {  "en": [ "a canvas with 3d object and transform"  ] },
     "items": [
         {
-            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+            "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
             "type": "Canvas",
             "label": { "en": [ "demo" ] },
             "content": [
                 {
-                    "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotationpage/0",
+                    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotationpage/0",
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/0",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/0",
                             "type": "Annotation",
                             "motivation": "painting",
-                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
                             "body": [
                                 {
                                     "items": [
                                         {
                                             "format": "model/gltf+json",
-                                            "id": "https://edsilv.github.io/strawmen/media/object.gltf",
+                                            "id": "https://edsilv.github.io/iiif-ecs-proposal/media/object.gltf",
                                             "type": "PhysicalObject"
                                         }
                                     ]
@@ -35,10 +35,10 @@
                             ]
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/1",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/1",
                             "type": "Annotation",
                             "motivation": "scale",
-                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
                             "body": {
                                 "x": 1,
                                 "y": 1,
@@ -46,10 +46,10 @@
                             }
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/2",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/2",
                             "type": "Annotation",
                             "motivation": "position",
-                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
                             "body": {
                                 "x": 0,
                                 "y": 1,
@@ -57,10 +57,10 @@
                             }
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/3",
+                            "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/3",
                             "type": "Annotation",
                             "motivation": "rotation",
-                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
                             "body": {
                                 "x": 45,
                                 "y": 90,
