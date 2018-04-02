@@ -22,9 +22,9 @@ Use custom annotation `motivation`s to classify components.
 ## Components
 
 <details>
-<summary>Scale Component</summary>
+<summary>Scale</summary>
 
-```js
+```json
 {
     "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2/annotation/1",
     "type": "Annotation",
