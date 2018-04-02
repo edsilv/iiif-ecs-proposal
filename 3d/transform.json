@@ -1,6 +1,9 @@
 
 {
-    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "@context": [
+        "http://iiif.io/api/presentation/3/context.json",
+        "http://customschema.com/ecm.json"
+    ],
     "id": "https://edsilv.github.io/strawmen/behavior/transform.json",
     "type": "Manifest",
     "label": {  "en": [ "a canvas with 3d object and transform"  ] },
@@ -34,37 +37,39 @@
                         {
                             "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/1",
                             "type": "Annotation",
-                            "motivation": "transform",
+                            "motivation": "scale",
                             "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
-                            "body": [
-                                {
-                                    "items": [
-                                        {
-                                            "type": "position",
-                                            "x": 0.01,
-                                            "y": 0.01,
-                                            "z": 0.1
-                                        },
-                                        {
-                                            "type": "rotation",
-                                            "x": 0,
-                                            "y": 0,
-                                            "z": 1
-                                        },
-                                        {
-                                            "type": "scale",
-                                            "x": 1,
-                                            "y": 1,
-                                            "z": 1
-                                        }
-                                    ]
-                                }
-                            ]
+                            "body": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/2",
+                            "type": "Annotation",
+                            "motivation": "position",
+                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "body": {
+                                "x": 0,
+                                "y": 1,
+                                "z": -1
+                            }
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/3",
+                            "type": "Annotation",
+                            "motivation": "rotation",
+                            "target": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0",
+                            "body": {
+                                "x": 45,
+                                "y": 90,
+                                "z": 180
+                            }
                         }
                     ]
                 }
             ]
         }
-
     ]
 }

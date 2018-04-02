@@ -1,6 +1,8 @@
-
 {
-    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "@context": [
+        "http://iiif.io/api/presentation/3/context.json",
+        "http://customschema.com/ecs.json"
+    ],
     "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json",
     "type": "Manifest",
     "label": {  "en": [ "auto-advancing audio"  ] },
@@ -36,8 +38,10 @@
                             "type": "Annotation",
                             "motivation": "playback",
                             "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
-                            "duration": 3723.4,
-                            "continuous": true
+                            "body": {
+                                "duration": 3723.4,
+                                "continuous": true
+                            }
                         }
                     ]
                 }
@@ -74,8 +78,10 @@
                             "type": "Annotation",
                             "motivation": "playback",
                             "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
-                            "duration": 3723.4,
-                            "continuous": true
+                            "body": {
+                                "duration": 3723.4,
+                                "continuous": true
+                            }
                         }
                     ]
                 }

@@ -1,6 +1,8 @@
-
 {
-    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "@context": [
+        "http://iiif.io/api/presentation/3/context.json",
+        "http://customschema.com/ecs.json"
+    ],
     "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json",
     "type": "Manifest",
     "label": {  "en": [ "continuous images"  ] },
@@ -32,13 +34,24 @@
                             ]
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0/annotation/1",
+                            "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0/annotation/1",
                             "type": "Annotation",
-                            "motivation": "layout",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/0",
-                            "width": 100,
-                            "height": 100,
-                            "continuous": true
+                            "motivation": "scale",
+                            "target": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0",
+                            "body": {
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0/annotation/2",
+                            "type": "Annotation",
+                            "motivation": "display",
+                            "target": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/0",
+                            "body": {
+                                "viewingDirection": "top-to-bottom",
+                                "continuous": true
+                            }
                         }
                     ]
                 }
@@ -71,13 +84,24 @@
                             ]
                         },
                         {
-                            "id": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1/annotation/1",
+                            "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1/annotation/1",
                             "type": "Annotation",
-                            "motivation": "layout",
-                            "target": "https://edsilv.github.io/strawmen/behavior/autoadvance-ecs.json/items/canvas/1",
-                            "width": 100,
-                            "height": 100,
-                            "continuous": true
+                            "motivation": "scale",
+                            "target": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1",
+                            "body": {
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        {
+                            "id": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1/annotation/2",
+                            "type": "Annotation",
+                            "motivation": "display",
+                            "target": "https://edsilv.github.io/strawmen/behavior/continuous-ecs.json/items/canvas/1",
+                            "body": {
+                                "viewingDirection": "top-to-bottom",
+                                "continuous": true
+                            }
                         }
                     ]
                 }
