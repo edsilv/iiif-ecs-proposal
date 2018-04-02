@@ -40,7 +40,7 @@ Use custom annotation `motivation`s to classify components.
 
 `width` and `height` as direct properties of a canvas implies that a resource can always have spatial dimensions. Audio files for example do not. 3D files would also require an extra `depth` value. I propose a `scale` component to encode these values if appropriate for the resource.
 
-[StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precendent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
+[StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precedent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
 
 A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
 
@@ -48,9 +48,10 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
 
 </details>
 
-## Position Component
+<details>
+<summary>Position</summary>
 
-```
+```json
 {
     "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/2",
     "type": "Annotation",
@@ -64,11 +65,13 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
 }
 ```
 
+</details>
 
 
-## Display Component
+<details>
+<summary>Display</summary>
 
-```
+```json
 {
     "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/3/annotation/2",
     "type": "Annotation",
@@ -89,9 +92,12 @@ In a 3D context, a `viewingDirection` of `top-to-bottom` could imply stacking on
 
 If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `viewingDirection:near-to-far`?
 
-## Playback Component
+</details>
 
-```
+<details>
+<summary>Playback</summary>
+
+```json
 {
     "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/0/annotation/1",
     "type": "Annotation",
@@ -104,9 +110,12 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 }
 ```
 
-## Rotation Component
+</details>
 
-```
+<details>
+<summary>Rotation</summary>
+
+```json
 {
     "id": "https://edsilv.github.io/strawmen/behavior/transform.json/items/canvas/0/annotation/3",
     "type": "Annotation",
@@ -123,6 +132,8 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 The playback component adds `duration` and other strictly temporal properties to a `canvas`.
 
 The `continuous` property in this context instructs the playback `system` to advance to the next playable `entity` when this `entity`'s playable `duration` ends.
+
+</details>
 
 ## Notes
 
