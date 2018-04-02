@@ -138,4 +138,4 @@ Does the `painting` motivation still make sense? Does one 'paint' a non-visual a
 
 Three.js would allow [2D](https://threejs.org/docs/#api/cameras/OrthographicCamera) or [3D](https://threejs.org/docs/#api/cameras/PerspectiveCamera) presentation. 
 
-aframe (written in three.js) has a complete ECS implementation already. Work would be required to map IIIF ECS components to aframe components: https://github.com/aframevr/aframe/tree/master/docs/components
+aframe (written in three.js) has a complete ECS implementation already. Work would be required to map IIIF ECS components to [aframe components](https://github.com/aframevr/aframe/tree/master/docs/components).
