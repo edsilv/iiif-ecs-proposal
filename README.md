@@ -43,7 +43,7 @@ Could the ecs schema override `body` to permit complex json data values within a
 
 A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
 
-In the example above, the `x`, `y`, and `z` properties describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
+In the example above, the `x`, `y`, and `z` values describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
 
 </details>
 
@@ -58,11 +58,13 @@ In the example above, the `x`, `y`, and `z` properties describe a flat plane wit
     "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
     "body": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "z": -1
     }
 }
 ```
+
+Defines the position of the canvas relative to the camera. In this example, centered and 1 unit's distance away.
 
 </details>
 
