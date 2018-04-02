@@ -6,7 +6,7 @@ This is a proposal (WIP) for how to use the [IIIF Presentation API](http://prezi
 
 `Annotation` is equivalent to `Component`.
 
-IIIF viewers contain the `system` logic.
+IIIF viewers contain the `System` logic.
 
 To extend your IIIF manifest to allow ECS behaviour, include a custom schema:
 
