@@ -22,29 +22,29 @@ Use custom annotation `motivation`s to classify components.
 ## Components
 
 <details>
-    <summary>Scale Component</summary>
+<summary>Scale Component</summary>
 
-    ```
-    {
-        "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2/annotation/1",
-        "type": "Annotation",
-        "motivation": "scale",
-        "target": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2",
-        "body": {
-            "x": 100,
-            "y": 100,
-            "z": 0
-        }
+```js
+{
+    "id": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2/annotation/1",
+    "type": "Annotation",
+    "motivation": "scale",
+    "target": "https://edsilv.github.io/strawmen/behavior/mixed.json/items/canvas/2",
+    "body": {
+        "x": 100,
+        "y": 100,
+        "z": 0
     }
-    ```
+}
+```
 
-    `width` and `height` as direct properties of a canvas implies that a resource can always have spatial dimensions. Audio files for example do not. 3D files would also require an extra `depth` value. I propose a `scale` component to encode these values if appropriate for the resource.
+`width` and `height` as direct properties of a canvas implies that a resource can always have spatial dimensions. Audio files for example do not. 3D files would also require an extra `depth` value. I propose a `scale` component to encode these values if appropriate for the resource.
 
-    [StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precendent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
+[StringBody](https://www.w3.org/TR/annotation-model/#string-body) sets a precendent for including values directly into annotations. I propose that the ecs schema overrides `body` to permit complex json data values typed per component.
 
-    A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
+A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
 
-    In the example above, the `x`, `y`, and `z` properties describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
+In the example above, the `x`, `y`, and `z` properties describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
 
 </details>
 
