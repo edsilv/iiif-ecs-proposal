@@ -8,7 +8,7 @@ This is a proposal (WIP) for how to use the [IIIF Presentation API](http://prezi
 
 IIIF viewers contain the `System` logic.
 
-To extend a IIIF manifest to allow ECS behaviour, include a custom schema:
+To extend a IIIF manifest to allow ECS behaviour, include a custom schema, e.g.
 
 ```
 "@context": [
