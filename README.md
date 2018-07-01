@@ -25,6 +25,10 @@ To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
 ]
 ```
 
+## Example Implementation
+
+https://github.com/edsilv/iiiframe
+
 ## Components
 
 <details>
