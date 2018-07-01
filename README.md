@@ -180,6 +180,7 @@ The `continuous` property in this context instructs the playback `system` to adv
 ### References
 
 https://www.slideshare.net/workergnome/extending-iiif-30
+
 https://w3c.github.io/web-annotation/model/wd/#extending-motivations
 
 <!--
