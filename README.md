@@ -30,6 +30,8 @@ To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
 <details>
 <summary>Scale</summary>
 
+### Annotation
+
 ```json
 {
     "id": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/1/annotation/1",
@@ -43,6 +45,8 @@ To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
 }
 ```
 
+### Annotation Body
+
 ```json
 {
     "x": 100,
@@ -51,17 +55,14 @@ To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
 }
 ```
 
-[StringBody](https://www.w3.org/TR/annotation-model/#string-body) allows values to be included directly into annotations. 
-Could the ecs schema override `body` to permit complex json data values within annotations? The content of these complex objects would be defined per component type.
-
-A component with a `motivation` of `scale` would accept a body containing only `x`, `y`, and `z` values.
-
 In the example above, the `x`, `y`, and `z` values describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
 
 </details>
 
 <details>
 <summary>Position</summary>
+
+### Annotation
 
 ```json
 {
@@ -75,6 +76,8 @@ In the example above, the `x`, `y`, and `z` values describe a flat plane with wi
     }
 }
 ```
+
+### Annotation Body
 
 ```json
 {
@@ -91,6 +94,8 @@ Defines the position of the canvas relative to the camera. In this example, cent
 <details>
 <summary>Rotation</summary>
 
+### Annotation
+
 ```json
 {
     "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/3",
@@ -104,6 +109,8 @@ Defines the position of the canvas relative to the camera. In this example, cent
 }
 ```
 
+### Annotation Body
+
 ```json
 {
     "x": 45,
@@ -112,10 +119,14 @@ Defines the position of the canvas relative to the camera. In this example, cent
 }
 ```
 
+Rotate 45 degrees about the `x` axis, 90 degrees about the `y` axis, and 180 degrees about the `z` axis.
+
 </details>
 
 <details>
 <summary>Display</summary>
+
+### Annotation
 
 ```json
 {
@@ -130,6 +141,8 @@ Defines the position of the canvas relative to the camera. In this example, cent
 }
 ```
 
+### Annotation Body
+
 ```json
 {
     "viewingDirection": "top-to-bottom",
@@ -139,16 +152,18 @@ Defines the position of the canvas relative to the camera. In this example, cent
 
 The `continuous` `viewingHint` requires the presence of a `viewingDirection` in IIIF. I propose that these are consolidated into properties of a single `display` component per `canvas`.
 
-In a 3D context, a `viewingDirection` of `top-to-bottom` could imply stacking on the z index. Maybe add `near-to-far`, `far-to-near` to remove ambiguity?
+<!-- In a 3D context, a `viewingDirection` of `top-to-bottom` could imply stacking on the z index. Maybe add `near-to-far`, `far-to-near` to remove ambiguity? -->
 
-`viewingDirection` could have a 'sensible default' of `left-to-right`, `continuous` of `false`.
+<!-- `viewingDirection` could have a default value of `left-to-right`, `continuous` of `false`.
 
-If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `viewingDirection:near-to-far`?
+If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `viewingDirection:near-to-far`? -->
 
 </details>
 
 <details>
 <summary>Playback</summary>
+
+### Annotation
 
 ```json
 {
@@ -162,6 +177,8 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
     }
 }
 ```
+
+### Annotation Body
 
 ```json
 {
