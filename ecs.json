@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@version":     1.1,
+        "oa":           "http://www.w3.org/ns/oa#",
+        "display":      {"@type": "@id", "@id": "oa:Motivation"},
+        "playback":     {"@type": "@id", "@id": "oa:Motivation"},
+        "position":     {"@type": "@id", "@id": "oa:Motivation"},
+        "rotation":     {"@type": "@id", "@id": "oa:Motivation"},
+        "scale":        {"@type": "@id", "@id": "oa:Motivation"}
+    }
+}

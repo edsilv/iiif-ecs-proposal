@@ -1,23 +1,29 @@
 # IIIF Presentation API as Entity Component System
 
-This is a proposal (WIP) for how to use the [IIIF Presentation API](http://prezi3.iiif.io/api/presentation/3.0/) as an [Entity Component System](https://aframe.io/docs/0.8.0/introduction/entity-component-system.html).
+This is a proposal (WIP) for an [extension](http://iiif.io/api/annex/registry/extensions/) of the [IIIF Presentation API](http://prezi3.iiif.io/api/presentation/3.0/) to allow it to be used as an [Entity Component System](https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system).
 
 `Canvas` is equivalent to `Entity`.
 
 `Annotation` is equivalent to `Component`.
 
-IIIF viewers contain the `System` logic.
+IIIF viewers ('engines' is a more appropriate term?) contain the `System` logic to process the effects of components (annotations) on entities (canvases).
 
-To extend a IIIF manifest to allow ECS behaviour, include a custom schema, e.g.
+The IIIF-ECS Extension would permit an extra set of annotation `motivations` to be used.
+
+These would allow annotations to specify _behaviours_, confering display properties such as `scale`, `position`, `rotation` with their corresponding json values to canvases.
+
+The proposed IIIF 'engines' would ignore canvas properties of `width`, `height`, and `duration` - using annotated behaviours instead.
+
+Using the `motivation` of `painting` to annotate a 3D resource onto a `canvas` is therefore permitted, shifting authority/responsibility for how media can be displayed from the annotated to the annotator.
+
+To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
 
 ```
 "@context": [
-    "http://iiif.io/api/presentation/3/context.json",
-    "http://customschema.com/ecs.json"
+    "https://edsilv.github.io/iiif-ecs-proposal/ecs.json",
+    "http://iiif.io/api/presentation/3/context.json"
 ]
 ```
-
-Use custom annotation `motivation`s to classify components.
 
 ## Components
 
@@ -31,10 +37,17 @@ Use custom annotation `motivation`s to classify components.
     "motivation": "scale",
     "target": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/1",
     "body": {
-        "x": 100,
-        "y": 100,
-        "z": 0
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/continuous-images/scale.json",
+        "format": "application/json"
     }
+}
+```
+
+```json
+{
+    "x": 100,
+    "y": 100,
+    "z": 0
 }
 ```
 
@@ -57,14 +70,47 @@ In the example above, the `x`, `y`, and `z` values describe a flat plane with wi
     "motivation": "position",
     "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
     "body": {
-        "x": 0,
-        "y": 0,
-        "z": -1
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/3d-transform/position.json",
+        "format": "application/json"
     }
 }
 ```
 
+```json
+{
+    "x": 0,
+    "y": 0,
+    "z": -1
+}
+```
+
 Defines the position of the canvas relative to the camera. In this example, centered and 1 unit's distance away.
+
+</details>
+
+<details>
+<summary>Rotation</summary>
+
+```json
+{
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/3",
+    "type": "Annotation",
+    "motivation": "rotation",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
+    "body": {
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/3d-transform/rotation.json",
+        "format": "application/json"
+    }
+}
+```
+
+```json
+{
+    "x": 45,
+    "y": 90,
+    "z": 180
+}
+```
 
 </details>
 
@@ -78,9 +124,16 @@ Defines the position of the canvas relative to the camera. In this example, cent
     "motivation": "display",
     "target": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/2",
     "body": {
-        "viewingDirection": "top-to-bottom",
-        "continuous": true
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/continuous-images/display.json",
+        "format": "application/json"
     }
+}
+```
+
+```json
+{
+    "viewingDirection": "top-to-bottom",
+    "continuous": true
 }
 ```
 
@@ -104,9 +157,16 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
     "motivation": "playback",
     "target": "https://edsilv.github.io/iiif-ecs-proposal/auto-advancing-audio.json/items/canvas/0",
     "body": {
-        "duration": 3723.4,
-        "continuous": true
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/auto-advancing-audio/playback.json",
+        "format": "application/json"
     }
+}
+```
+
+```json
+{
+    "duration": 3723.4,
+    "continuous": true
 }
 ```
 
@@ -116,25 +176,13 @@ The `continuous` property in this context instructs the playback `system` to adv
 
 </details>
 
-<details>
-<summary>Rotation</summary>
 
-```json
-{
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/3",
-    "type": "Annotation",
-    "motivation": "rotation",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
-    "body": {
-        "x": 45,
-        "y": 90,
-        "z": 180
-    }
-}
-```
+### References
 
-</details>
+https://www.slideshare.net/workergnome/extending-iiif-30
+https://w3c.github.io/web-annotation/model/wd/#extending-motivations
 
+<!--
 ## Notes
 
 Does the `painting` motivation still make sense? Does one 'paint' a non-visual audio file onto a canvas? Perhaps something like `asset` is more generic?
@@ -142,3 +190,4 @@ Does the `painting` motivation still make sense? Does one 'paint' a non-visual a
 Three.js would allow [2D](https://threejs.org/docs/#api/cameras/OrthographicCamera) or [3D](https://threejs.org/docs/#api/cameras/PerspectiveCamera) presentation. Perhaps use a `camera` component with a `projection` value of `orthographic` or `perspective`?
 
 aframe (written in three.js) has a complete ECS implementation already. Work would be required to map IIIF ECS components to [aframe components](https://github.com/aframevr/aframe/tree/master/docs/components).
+-->

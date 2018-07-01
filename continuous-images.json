@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://iiif.io/api/presentation/3/context.json",
-        "http://customschema.com/ecs.json"
+        "https://edsilv.github.io/iiif-ecs-proposal/ecs.json"
     ],
     "id": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json",
     "type": "Manifest",
