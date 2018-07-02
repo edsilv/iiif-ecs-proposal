@@ -153,7 +153,7 @@ Rotate 45 degrees about the `x` axis, 90 degrees about the `y` axis, and 180 deg
 }
 ```
 
-The `continuous` `viewingHint` or `behavior` requires the presence of a `viewingDirection` in IIIF. I propose that these are consolidated into properties of a single `display` component per `entity`.
+The `continuous` `viewingHint` or `behavior` requires the presence of a `viewingDirection` in IIIF. I propose that these are consolidated into properties of a single `display` component per `canvas`.
 
 <!-- In a 3D context, a `viewingDirection` of `top-to-bottom` could imply stacking on the z index. Maybe add `near-to-far`, `far-to-near` to remove ambiguity? -->
 
@@ -192,7 +192,7 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 
 The playback component adds `duration` and other temporal properties to a `canvas`.
 
-The `continuous` property in this context instructs the playback `system` to advance to the next playable `entity` when this `entity`'s playable `duration` ends.
+The `continuous` property in this context instructs the playback `system` to advance to the next playable `canvas` when this `canvas`'s playable `duration` ends.
 
 </details>
 
