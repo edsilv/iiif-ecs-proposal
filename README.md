@@ -196,6 +196,10 @@ The `continuous` property in this context instructs the playback `system` to adv
 
 </details>
 
+### Nested Entities
+
+https://github.com/edsilv/iiif-ecs-proposal/issues/2
+
 
 ### References
 
