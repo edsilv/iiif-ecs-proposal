@@ -1,4 +1,4 @@
-# IIIF-ECS Proposal
+# IIIF-ECS Extension Proposal
 
 This is a proposal (work in progress) for an [extension](http://iiif.io/api/annex/registry/extensions/) of the [IIIF Presentation API](http://prezi3.iiif.io/api/presentation/3.0/) to allow it to be used as an [Entity Component System](https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system).
 
