@@ -1,22 +1,22 @@
-# IIIF Presentation API as Entity Component System
+# IIIF-ECS Proposal
 
-This is a proposal (WIP) for an [extension](http://iiif.io/api/annex/registry/extensions/) of the [IIIF Presentation API](http://prezi3.iiif.io/api/presentation/3.0/) to allow it to be used as an [Entity Component System](https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system).
+This is a proposal (work in progress) for an [extension](http://iiif.io/api/annex/registry/extensions/) of the [IIIF Presentation API](http://prezi3.iiif.io/api/presentation/3.0/) to allow it to be used as an [Entity Component System](https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system).
 
 `Canvas` is equivalent to `Entity`.
 
 `Annotation` is equivalent to `Component`.
 
-IIIF viewers ('engines' is a more appropriate term?) contain the `System` logic to process the effects of components (annotations) on entities (canvases).
+IIIF viewers ('engines'?) contain the `System` logic to process the effects of components (annotations) on entities (canvases).
 
 The IIIF-ECS Extension would permit an extra set of annotation `motivations` to be used.
 
-These would allow annotations to specify _behaviours_, confering display properties such as `scale`, `position`, `rotation` with their corresponding json values to canvases.
+These would allow annotations to specify _behaviours_, conferring display properties such as `scale`, `position`, `rotation` with their corresponding json values to canvases.
 
-The proposed IIIF 'engines' would ignore canvas properties of `width`, `height`, and `duration` - using annotated behaviours instead.
+The proposed IIIF engines would prefer these to inline canvas properties of `width`, `height`, and `duration`.
 
-Using the `motivation` of `painting` to annotate a 3D resource onto a `canvas` is therefore permitted, shifting authority/responsibility for how media can be displayed from the annotated to the annotator.
+Using the `motivation` of `painting` to annotate a 3D resource onto a `canvas` is permitted, shifting authority/responsibility for how media can be displayed from the annotated to the annotator.
 
-To extend a IIIF manifest to allow ECS behaviour, include the custom schema:
+To extend a IIIF manifest to allow ECS behaviour, include a custom jsonld context:
 
 ```
 "@context": [
@@ -54,12 +54,11 @@ https://github.com/edsilv/iiiframe
 ```json
 {
     "x": 100,
-    "y": 100,
-    "z": 0
+    "y": 100
 }
 ```
 
-In the example above, the `x`, `y`, and `z` values describe a flat plane with width and height of 100. This is equivalent to a conventional 2D image.
+In the example above, the `x` and `y`values describe a flat plane with width and height of 100. `z` is also allowed, but can be omitted. This is equivalent to a conventional 2D image.
 
 </details>
 
@@ -154,7 +153,7 @@ Rotate 45 degrees about the `x` axis, 90 degrees about the `y` axis, and 180 deg
 }
 ```
 
-The `continuous` `viewingHint` requires the presence of a `viewingDirection` in IIIF. I propose that these are consolidated into properties of a single `display` component per `canvas`.
+The `continuous` `viewingHint` or `behavior` requires the presence of a `viewingDirection` in IIIF. I propose that these are consolidated into properties of a single `display` component per `entity`.
 
 <!-- In a 3D context, a `viewingDirection` of `top-to-bottom` could imply stacking on the z index. Maybe add `near-to-far`, `far-to-near` to remove ambiguity? -->
 
