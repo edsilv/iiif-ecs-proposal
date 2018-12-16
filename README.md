@@ -38,23 +38,19 @@ https://github.com/edsilv/iiiframe
 
 ```json
 {
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/1/annotation/1",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/0",
     "type": "Annotation",
     "motivation": "scale",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/1",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0",
     "body": {
-        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/continuous-images/scale.json",
-        "format": "application/json"
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/0/body/0",
+        "format": "application/json",
+        "type": "DataSet",
+        "value": {
+            "x": 100,
+            "y": 100
+        }
     }
-}
-```
-
-### Annotation Body
-
-```json
-{
-    "x": 100,
-    "y": 100
 }
 ```
 
@@ -69,24 +65,20 @@ In the example above, the `x` and `y`values describe a flat plane with width and
 
 ```json
 {
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/2",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/1",
     "type": "Annotation",
     "motivation": "position",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0",
     "body": {
-        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/3d-transform/position.json",
-        "format": "application/json"
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/1/body/0",
+        "format": "application/json",
+        "type": "DataSet",
+        "value": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+        }
     }
-}
-```
-
-### Annotation Body
-
-```json
-{
-    "x": 0,
-    "y": 0,
-    "z": -1
 }
 ```
 
@@ -101,24 +93,20 @@ Defines the position of the canvas relative to the camera. In this example, cent
 
 ```json
 {
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0/annotation/3",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/2",
     "type": "Annotation",
     "motivation": "rotation",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/3d-transform.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0",
     "body": {
-        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/3d-transform/rotation.json",
-        "format": "application/json"
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/2/body/0",
+        "format": "application/json",
+        "type": "DataSet",
+        "value": {
+            "x": 45,
+            "y": 90,
+            "z": 180
+        }
     }
-}
-```
-
-### Annotation Body
-
-```json
-{
-    "x": 45,
-    "y": 90,
-    "z": 180
 }
 ```
 
@@ -133,23 +121,19 @@ Rotate 45 degrees about the `x` axis, 90 degrees about the `y` axis, and 180 deg
 
 ```json
 {
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/3/annotation/2",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/3",
     "type": "Annotation",
     "motivation": "display",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/continuous-images.json/items/canvas/2",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0",
     "body": {
-        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/continuous-images/display.json",
-        "format": "application/json"
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/3/body/0",
+        "format": "application/json",
+        "type": "DataSet",
+        "value": {
+            "viewingDirection": "top-to-bottom",
+            "continuous": true
+        }
     }
-}
-```
-
-### Annotation Body
-
-```json
-{
-    "viewingDirection": "top-to-bottom",
-    "continuous": true
 }
 ```
 
@@ -170,23 +154,19 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 
 ```json
 {
-    "id": "https://edsilv.github.io/iiif-ecs-proposal/auto-advancing-audio.json/items/canvas/0/annotation/1",
+    "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/4",
     "type": "Annotation",
     "motivation": "playback",
-    "target": "https://edsilv.github.io/iiif-ecs-proposal/auto-advancing-audio.json/items/canvas/0",
+    "target": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0",
     "body": {
-        "id": "https://edsilv.github.io/iiif-ecs-proposal/annotations/auto-advancing-audio/playback.json",
-        "format": "application/json"
+        "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/4/body/0",
+        "format": "application/json",
+        "type": "DataSet",
+        "value": {
+            "duration": 3723.4,
+            "continuous": true
+        }
     }
-}
-```
-
-### Annotation Body
-
-```json
-{
-    "duration": 3723.4,
-    "continuous": true
 }
 ```
 
