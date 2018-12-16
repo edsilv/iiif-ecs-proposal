@@ -34,8 +34,6 @@ https://github.com/edsilv/iiiframe
 <details>
 <summary>Scale</summary>
 
-### Annotation
-
 ```json
 {
     "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/0",
@@ -60,8 +58,6 @@ In the example above, the `x` and `y`values describe a flat plane with width and
 
 <details>
 <summary>Position</summary>
-
-### Annotation
 
 ```json
 {
@@ -89,8 +85,6 @@ Defines the position of the canvas relative to the camera. In this example, cent
 <details>
 <summary>Rotation</summary>
 
-### Annotation
-
 ```json
 {
     "id": "https://edsilv.github.io/iiif-ecs-proposal/canvas/0/anno/2",
@@ -116,8 +110,6 @@ Rotate 45 degrees about the `x` axis, 90 degrees about the `y` axis, and 180 deg
 
 <details>
 <summary>Display</summary>
-
-### Annotation
 
 ```json
 {
@@ -149,8 +141,6 @@ If `continuous` is `false`, is that equivalent to stacking on the z axis? i.e. `
 
 <details>
 <summary>Playback</summary>
-
-### Annotation
 
 ```json
 {
